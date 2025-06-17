@@ -4,6 +4,8 @@
     --mainBlue-text: #004ae2;
 
     --darkBttn-bacg: #000000;
+    --whitBttn-bacg: #ffffff;
+    --black-Backgro: #000000;
 }
 
 /* Orden 1 */
@@ -26,7 +28,6 @@ body {
     font-family: "Be Vietnam Pro", sans-serif;
     font-style: normal;
     font-size: 16px;
-    width: 100vw;
 }
 
 ul {
@@ -46,7 +47,7 @@ a {
 
 /* orden 3 */
 .container {
-    max-width: 1300px;
+    max-width: 1365px;
 }
 
 /* ---------------Navbar---------------- */
@@ -102,6 +103,7 @@ a {
     font-size: 16px;
     font-weight: 700;
     padding: 20px 30px;
+    text-transform: capitalize;
 }
 
 .button.button_black {
@@ -120,4 +122,71 @@ a {
 
 .button.button_black:hover .button_link {
     color: var(--darkBttn-bacg);
+}
+
+/* ---------------Navbar---------------- */
+main {
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    background-color: var(--black-Backgro);
+    padding: 100px 0 250px 0;
+}
+
+.main .container {
+    display: flex;
+    margin: 0 auto;
+}
+
+.main_contentLeft {
+    width: 50%;
+}
+
+.main_contentRight {
+    width: 50%;
+}
+
+.main_title {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.main_divRight {
+    margin-left: auto;
+    width: 340px;
+}
+
+.main_paragraph {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.button.button_white {
+    border: solid 1px var(--whitBttn-bacg);
+    background-color: var(--whitBttn-bacg);
+    transition: all .3s ease;
+}
+
+.button.button_white:hover {
+    background-color: transparent;
+}
+
+.button.button_white:hover .button_link {
+    color: var(--whitBttn-bacg);
+}
+/* ---------------Banner---------------- */
+.banner{
+    width: 100%;
+}
+.banner .container{
+    margin: 0 auto;
+}
+.banner .banner_img{
+    border-radius: 25px;
+    width: 100%;
+    transform: translateY(-200px);
 }
