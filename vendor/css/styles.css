@@ -41,16 +41,24 @@ a {
 }
 
 
-.header {
-    width: 100%;
-}
-
 /* orden 3 */
 .container {
     max-width: 1365px;
 }
 
+.section__titleLable {
+    display: block;
+    color: var(--mainBlue-text);
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+}
+
 /* ---------------Navbar---------------- */
+.header {
+    width: 100%;
+}
+
 .nav {
     width: 100%;
     height: 75px;
@@ -212,13 +220,7 @@ main {
     width: 48%;
 }
 
-.about .section__titleLable {
-    display: block;
-    color: var(--mainBlue-text);
-    font-weight: 700;
-    text-transform: uppercase;
-    width: 100%;
-}
+
 
 .about .section__title {
     font-size: 38px;
