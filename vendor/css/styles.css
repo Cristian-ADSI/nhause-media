@@ -271,7 +271,7 @@ a {
 }
 .projects .projects__listItem {
   background-color: #000000;
-  border-radius: 25px;
+  border-radius: 30px;
   cursor: pointer;
 
   position: relative;
@@ -293,7 +293,7 @@ a {
 
 .projects .projects__img {
   transition: opacity ease 0.3s;
-
+  height: 100%;
   width: 100%;
 }
 
