@@ -322,7 +322,7 @@ a {
   width: 18%;
 }
 
-.projects .projects__listItem > .material-symbols-outlined {
+.projects .projects__listItem>.material-symbols-outlined {
   opacity: 0;
   font-size: 50px;
   font-variation-settings: "FILL" 1;
@@ -339,7 +339,7 @@ a {
   width: 100%;
 }
 
-.projects .projects__listItem > .project__description {
+.projects .projects__listItem>.project__description {
   z-index: 10;
   transition: opacity ease 0.3s;
   opacity: 0;
@@ -383,7 +383,7 @@ a {
   opacity: 100%;
 }
 
-.projects .projects__listItem:hover > .material-symbols-outlined {
+.projects .projects__listItem:hover>.material-symbols-outlined {
   opacity: 100%;
 }
 
@@ -457,21 +457,22 @@ a {
   overflow: hidden;
   width: 100%;
   height: auto;
-  padding-bottom: 200px;
-  margin-bottom: 80px;
+  
 }
+
 .testimonials .container {
   position: relative;
   margin: 0 auto;
 }
 
-.testimonials .card {
+.testimonials .testimonials__cards .card {
   position: relative;
   z-index: 20;
   max-width: 50%;
+
 }
 
-.testimonials__banner {
+.testimonials .testimonials__banner {
   border-radius: 30px;
   display: block;
 
@@ -481,5 +482,23 @@ a {
   top: 0;
   left: 50%;
   width: 70%;
-  z-index: 10;
+  z-index: 0;
+}
+
+.testimonials .testiomonial__list {
+  margin-top: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10%;
+}
+
+.testimonials .testimonials__item {
+  width: 10%;
+  margin-bottom: 100px;
+}
+
+.testimonials .testimonial__brand {
+  width: 100%;
 }
