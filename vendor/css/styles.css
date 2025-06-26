@@ -7,6 +7,8 @@
   --darkBttn-bacg: #000000;
   --whitBttn-bacg: #ffffff;
   --black-Backgro: #000000;
+
+  --white-cardBgr: #ffffff;
 }
 
 /* Orden 1 */
@@ -47,7 +49,7 @@ a {
 
 /* orden 3 */
 .container {
-  max-width: 1365px;
+  max-width: 1300px;
 }
 
 .section__titleLable {
@@ -77,6 +79,38 @@ a {
   color: var(--darkBlue-text);
   font-weight: 300;
   text-align: justify;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: var(--white-cardBgr);
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px -3px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.card.card-dark {
+  background-color: var(--black-Backgro);
+}
+
+.card__title {
+  color: var(--darkBlue-text);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.card.card-dark .card__title {
+  color: var(--withe-text);
+}
+
+.card.card-dark .section__text {
+  color: var(--withe-text);
+}
+
+.card__logo {
+  width: 150px;
   margin-bottom: 30px;
 }
 
@@ -288,7 +322,7 @@ a {
   width: 18%;
 }
 
-.projects .projects__listItem>.material-symbols-outlined {
+.projects .projects__listItem > .material-symbols-outlined {
   opacity: 0;
   font-size: 50px;
   font-variation-settings: "FILL" 1;
@@ -305,7 +339,7 @@ a {
   width: 100%;
 }
 
-.projects .projects__listItem>.project__description {
+.projects .projects__listItem > .project__description {
   z-index: 10;
   transition: opacity ease 0.3s;
   opacity: 0;
@@ -349,7 +383,7 @@ a {
   opacity: 100%;
 }
 
-.projects .projects__listItem:hover>.material-symbols-outlined {
+.projects .projects__listItem:hover > .material-symbols-outlined {
   opacity: 100%;
 }
 
@@ -393,7 +427,7 @@ a {
   text-transform: uppercase;
 }
 
-/* ---------------Stories---------------- */
+/* ---------------Why Choose---------------- */
 .whyChoose {
   width: 100%;
   margin-bottom: 100px;
@@ -403,42 +437,49 @@ a {
   margin: 0 auto;
 }
 
-
 .whyChoose .whyChoose__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.whyChoose .whyChoose__item {
-  border-radius: 20px;
-  box-shadow: 0px 0px 30px -3px rgba(0, 0, 0, 0.1); 
-  padding: 30px;
-  width: 300px;
-}
-
-.whyChoose .whyChoose__itemTitle {
-  color: var(--darkBlue-text);
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  text-transform: capitalize;
-}
-
-.whyChoose .whyChoose__item.whyChoose__item-dark {
-  background-color: var(--black-Backgro);
-
-}
-
-.whyChoose .whyChoose__item.whyChoose__item-dark .whyChoose__itemTitle {
-  color: var(--withe-text);
-}
-
-.whyChoose .whyChoose__item.whyChoose__item-dark .section__text {
-  color: var(--withe-text);
-}
-
 .whyChoose .whyChoose__img {
   height: 50px;
   margin-bottom: 30px;
+}
+
+.whyChoose .card {
+  width: 300px;
+}
+
+/* ---------------Testimonials---------------- */
+.testimonials {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  padding-bottom: 200px;
+  margin-bottom: 80px;
+}
+.testimonials .container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.testimonials .card {
+  position: relative;
+  z-index: 20;
+  max-width: 50%;
+}
+
+.testimonials__banner {
+  border-radius: 30px;
+  display: block;
+
+  position: absolute;
+
+  transform: translateX(-15%);
+  top: 0;
+  left: 50%;
+  width: 70%;
+  z-index: 10;
 }
