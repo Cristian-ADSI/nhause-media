@@ -457,7 +457,7 @@ a {
   overflow: hidden;
   width: 100%;
   height: auto;
-  
+
 }
 
 .testimonials .container {
@@ -501,4 +501,79 @@ a {
 
 .testimonials .testimonial__brand {
   width: 100%;
+}
+
+/* ---------------Blog---------------- */
+.blog {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.blog .container {
+  margin: 0 auto;
+}
+
+.blog .blog__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+.blog .blog__item {
+  background: var(--whitBttn-bacg);
+  border-radius: 25px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  width: 47%;
+  transition: all ease .3s;
+
+}
+
+.blog .blog__link {
+  display: flex;
+  width: 100%;
+}
+
+.blog .blog__item:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 60px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+}
+
+.blog .blog__image {
+  width: 30%;
+}
+
+.blog .blog__content {
+  padding: 20px;
+}
+
+.blog .blog__info {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.blog .blog__infoText {
+  color: var(--darkBlue-text);
+  font-weight: 500;
+}
+
+.blog .blog__title {
+  color: var(--darkBlue-text);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  transition: color ease .3s;
+}
+
+.blog .blog__item:hover .blog__title {
+  color: var(--mainBlue-text);
+}
+
+.blog .button {
+  display: block;
+  margin: 0 auto;
 }
