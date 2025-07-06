@@ -62,7 +62,7 @@ a {
 }
 
 .section__title {
-  font-size: 38px;
+  font-size: 34px;
   margin-bottom: 30px;
   color: var(--darkBlue-text);
   max-width: 500px;
@@ -72,6 +72,10 @@ a {
 
   color: var(--withe-text);
 
+}
+
+.section__title.section__title-upercase {
+  text-transform: uppercase;
 }
 
 .section__subtitle {
@@ -88,6 +92,10 @@ a {
   margin-bottom: 30px;
 }
 
+.section__text.section__text-white {
+  color: var(--withe-text);
+}
+
 .button {
   background-color: lightgray;
   border: solid 1px transparent;
@@ -101,9 +109,10 @@ a {
   /*Explicar el display block en el boton*/
   font-size: 16px;
   font-weight: 700;
-  padding: 20px 30px;
+  padding: 15px 30px;
   text-transform: capitalize;
 }
+
 
 .button.button__black {
   border: solid 1px var(--darkBttn-bacg);
@@ -122,6 +131,7 @@ a {
 .button.button__black:hover .button__link {
   color: var(--darkBttn-bacg);
 }
+
 
 .button.button__white {
   border: solid 1px var(--darkBttn-bacg);
@@ -142,6 +152,7 @@ a {
   color: var(--whitBttn-bacg);
 }
 
+
 .button.button__whiteBorderless {
   border: solid 1px transparent;
   background-color: var(--whitBttn-bacg);
@@ -159,6 +170,26 @@ a {
 .button.button__whiteBorderless:hover .button__link {
   color: var(--whitBttn-bacg);
 }
+
+
+.button__whiteBlue-borderless {
+  border: solid 1px transparent;
+  background-color: var(--whitBttn-bacg);
+  transition: all 0.3s ease;
+}
+
+.button__whiteBlue-borderless:hover {
+  background-color: var(--mainBlue-text);
+}
+
+.button__whiteBlue-borderless .button__link {
+  color: var(--darkBttn-bacg);
+}
+
+.button__whiteBlue-borderless .button__link:hover {
+  color: var(--withe-text);
+}
+
 
 .card {
   background-color: var(--white-cardBgr);
@@ -325,8 +356,6 @@ a {
 
 .projects .container {
   padding: 0 30px;
-  max-width: unset;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -626,4 +655,131 @@ a {
 .jumbotron .button {
   margin: 0 auto;
   display: block;
+}
+
+/* ---------------FAQ---------------- */
+.faq {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.faq .container {
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+  margin: 0 auto;
+}
+
+.faq .faq__questions {
+  width: 45%;
+}
+
+.faq .faq__newsletter {
+  border-radius: 20px;
+  padding: 50px;
+  background-color: var(--black-Backgro);
+  width: 45%;
+}
+
+.faq .section__title {
+  max-width: 400px;
+}
+
+.faq .faq__questionsList {
+  border-bottom: solid 1px var(--darkBlue-text);
+}
+
+.faq .faq__item {
+
+  padding: 20px 20px 0 20px;
+  border-top: solid 1px var(--darkBlue-text);
+}
+
+.faq .section__text {
+  margin-bottom: 0;
+}
+
+.faq .faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--darkBlue-text);
+  font-weight: 500;
+
+}
+
+.faq .faq__questions .material-symbols-outlined {
+  color: var(--mainBlue-text);
+  cursor: pointer;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'opsz' 24
+}
+
+.faq .faq__answer {
+  transition: all ease .5s;
+  height: 0;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.faq .faq__answer.toggle {
+  height: 100px;
+}
+
+.faq .faq__subtitle {
+  color: var(--withe-text);
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.faq .section__text-white {
+  margin-bottom: 30px;
+  line-height: 40px;
+}
+
+.faq .faq__form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.faq .faq__input {
+  background-color: var(--whitBttn-bacg);
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  width: 300px;
+  height: 50px;
+  padding: 20px;
+}
+
+.faq .faq__input::placeholder {
+  opacity: .5;
+  font-size: 16px;
+}
+.faq .faq__link{
+  display: flex;
+  align-items: center;
+
+  color: var(--mainBlue-text);
+  gap: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color ease .3s;
+}
+.faq .faq__link .material-symbols-outlined{
+  transform: translateX(0);
+  transition: transform ease .3s;
+}
+
+.faq .faq__link:hover{
+color: var(--withe-text);
+}
+
+.faq .faq__link:hover .material-symbols-outlined{
+  transform: translateX(10px);
 }
