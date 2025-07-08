@@ -1,0 +1,49 @@
+.footer {
+    background-color: var(--darkBlue-text);
+    width: 100%;
+    color: var(--withe-text);
+}
+
+.footer .container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 100px 0 50px 0;
+    margin: 0 auto;
+}
+
+.footer .footer__section {
+    width: 33%;
+}
+
+.footer .footer__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.footer .footer__contact {
+    text-transform: capitalize;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.footer .footer__contact-email {
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.footer .footer__title {
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--mainBlue-text);
+    margin-bottom: 80px;
+}
+
+.footer .footer__copyright {
+    text-transform: capitalize;
+    width: 100%;
+}
