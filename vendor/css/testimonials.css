@@ -12,7 +12,7 @@
 
 .testimonials .testimonials__cards .card {
     position: relative;
-    z-index: 20;
+    z-index: 10;
     max-width: 50%;
 
 }

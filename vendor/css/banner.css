@@ -11,3 +11,22 @@
     width: 100%;
     transform: translateY(-200px);
 }
+
+@media only screen and (max-width: 769.99px) {
+    .banner .banner_img {
+        border-radius: 20px;
+        transform: translateY(-100px);
+    }
+}
+
+@media only screen and (max-width: 639.99px) {
+    .banner .banner_img {
+        transform: translateY(-70px);
+    }
+}
+
+@media only screen and (max-width: 479.99px) {
+    .banner .banner_img {
+        transform: translateY(-50px);
+    }
+}

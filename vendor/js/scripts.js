@@ -2,16 +2,29 @@
     'use strict';
 
     function init() {
-        const faqBtns = document.querySelectorAll(".faq__btn");
+        const faqBtns = document.querySelectorAll(".faq__btn")
         const answers = document.querySelectorAll(".faq__answer")
 
-        faqBtns.forEach(faqBtn => {
-            faqBtn.addEventListener("click", () => {
-                const clickAnswer = faqBtn.parentElement.nextElementSibling
-                checkAnwers(answers, clickAnswer)
-            })
-        });
+        const navToggleBtn = document.getElementById("navToggleBtn")
+        const navMenu = document.getElementById("navMenu")
 
+
+        navToggleBtn.addEventListener("click", (e) => {
+            e.preventDefault()
+            navMenu.classList.toggle("active")
+            
+            
+        })
+
+        faqToggle()
+        function faqToggle() {
+            faqBtns.forEach(faqBtn => {
+                faqBtn.addEventListener("click", () => {
+                    const clickAnswer = faqBtn.parentElement.nextElementSibling
+                    checkAnwers(answers, clickAnswer)
+                })
+            });
+        }
         function checkAnwers(answers, clickAnswer) {
 
 
