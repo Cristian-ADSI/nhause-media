@@ -2,82 +2,634 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--  Google Fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
+
+    <!-- google Icons  -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- CSS Style Sheet  -->
+    <link rel="stylesheet" href="./vendor/css/styles.css" />
 
     <title>nhaus media</title>
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="nav">
             <div class="container">
-                <a href="">nhaus media</a>
-                <ul>
-                    <li>
-                        <a href="#">explore</a>
+                <a href="" class="nav_logo">nhaus media</a>
+
+                <ul class="nav_menu">
+                    <li class="nav_menuItem">
+                        <a class="nav_menuLink active" href="#">explore</a>
                     </li>
 
-                    <li>
-                        <a href="#">pricing</a>
+                    <li class="nav_menuItem">
+                        <a class="nav_menuLink" href="#">pricing</a>
                     </li>
 
-                    <li>
-                        <a href="#">carrer</a>
+                    <li class="nav_menuItem">
+                        <a class="nav_menuLink" href="#">carrer</a>
                     </li>
 
-                    <li>
-                        <a href="#">about</a>
+                    <li class="nav_menuItem">
+                        <a class="nav_menuLink" href="#">about</a>
                     </li>
 
-                    <li>
-                        <a href="#">social Media</a>
+                    <li class="nav_menuItem">
+                        <a class="nav_menuLink" href="#">social Media</a>
                     </li>
                 </ul>
-                <button>
-                    <a href="#">Try for Free</a>
+                <button class="button button__black">
+                    <a class="button__link" href="#">Try for free</a>
                 </button>
             </div>
         </nav>
     </header>
-    <main>
 
+    <main>
         <!-- Main Section  -->
-        <section>
+        <section class="main">
             <div class="container">
-                <aside>
-                    <h1>create the brand you want with the edge you need</h1>
-                </aside>
-                <aside>
-                    <div>
-                        How much will it costs the target audience is makes and families aged zero and up
-                        <button>
-                            <a href="#">explore services</a>
+                <section class="main_contentLeft" background-color="blue">
+                    <h1 class="main_title">
+                        create the brand you want with the edge you need
+                    </h1>
+                </section>
+
+                <div class="main_contentRight">
+                    <div class="main_divRight">
+                        <p class="main_paragraph">
+                            How much will it costs the target audience is makes and families
+                            aged zero and up
+                        </p>
+                        <button class="button button__white">
+                            <a class="button__link" href="#">explore services</a>
                         </button>
                     </div>
-                </aside>
+                </div>
             </div>
         </section>
 
         <!-- Banner Section  -->
-        <section>
+        <section class="banner">
             <div class="container">
-                <img src="./vendor/images/building_01.png" alt="">
+                <img class="banner_img" src="./vendor/images/building_01.jpg" alt="Building Banner" />
             </div>
         </section>
 
+        <!-- About Section  -->
+        <section class="about">
+            <div class="container">
+                <h4 class="section__titleLable">about us</h4>
+                <section class="about__contentLeft">
+                    <h2 class="section__title">Value we give to you</h2>
+                    <img class="about__img" src="./vendor/images/building_02.jpg" alt="Building image" />
+
+                    <h3 class="section__subtitle">media production services</h3>
+
+                    <p class="section__text">
+                        Archito group se presente como un outil pluridiciplinaire et
+                        complete regroupant diverses maitrices et competences utiles a
+                        I'investissement immobilier
+                    </p>
+
+                    <button class="button button__black">
+                        <a href="" class="button__link"> explore pricing</a>
+                    </button>
+                </section>
+
+                <section class="about__contentRight">
+                    <img class="about__img" alt="Building image" src="./vendor/images/building_03.jpg" />
+
+                    <h3 class="section__subtitle">digital marketing services</h3>
+
+                    <p class="section__text">
+                        Archito group se presente como un outil pluridiciplinaire et
+                        complete regroupant diverses maitrices et competences utiles a
+                        I'investissement immobilier
+                    </p>
+
+                    <button class="button button__black">
+                        <a href="" class="button__link"> explore pricing</a>
+                    </button>
+                </section>
+            </div>
+        </section>
+
+        <!-- Projects Section  -->
+        <section class="projects">
+            <div class="container">
+                <p class="section__titleLable">our project</p>
+                <section class="projects__content">
+                    <h2 class="section__title">Take a look to our success projects</h2>
+                    <ul class="projects__list">
+                        <li class="projects__listItem">
+                            <img class="projects__img" src="./vendor/images/building_04.jpg" alt="Building Image" />
+
+                            <span class="material-symbols-outlined">bookmark</span>
+
+                            <p class="project__description">
+                                I want to take it to the next level. can you use a high
+                                definition screenshot I really like the colour but, you can
+                                change it
+                            </p>
+
+                            <div class="projects__listWrap">
+                                <h3 class="projects__tittle">CX Design</h3>
+                                <p class="project__description">Barcelona, Spain</p>
+                            </div>
+                        </li>
+
+                        <li class="projects__listItem">
+                            <img class="projects__img" src="./vendor/images/building_05.jpg" alt="Building Image" />
+
+                            <span class="material-symbols-outlined">bookmark</span>
+
+                            <p class="project__description">
+                                I want to take it to the next level. can you use a high
+                                definition screenshot I really like the colour but, you can
+                                change it
+                            </p>
+
+                            <div class="projects__listWrap">
+                                <h3 class="projects__tittle">digital marketing project</h3>
+                                <p class="project__description">Brujas, Belgium</p>
+                            </div>
+                        </li>
+
+                        <li class="projects__listItem">
+                            <img class="projects__img" src="./vendor/images/building_06.jpg" alt="Building Image" />
+                            <span class="material-symbols-outlined">bookmark</span>
+                            <p class="project__description">
+                                I want to take it to the next level. can you use a high
+                                definition screenshot I really like the colour but, you can
+                                change it
+                            </p>
+                            <div class="projects__listWrap">
+                                <h3 class="projects__tittle">Media Production</h3>
+                                <p class="project__description">Sao Paulo, Brazil</p>
+                            </div>
+                        </li>
+
+                        <li class="projects__listItem">
+                            <img class="projects__img" src="./vendor/images/building_07.jpg" alt="Building Image" />
+                            <span class="material-symbols-outlined">bookmark</span>
+
+                            <p class="project__description">
+                                I want to take it to the next level. can you use a high
+                                definition screenshot I really like the colour but, you can
+                                change it
+                            </p>
+                            <div class="projects__listWrap">
+                                <h3 class="projects__tittle">Copywriting project</h3>
+                                <p class="project__description">Oslo, Norway</p>
+                            </div>
+                        </li>
+
+                        <li class="projects__listItem">
+                            <img class="projects__img" src="./vendor/images/building_08.jpg" alt="Building Image" />
+                            <span class="material-symbols-outlined">bookmark</span>
+                            <p class="project__description">
+                                I want to take it to the next level. can you use a high
+                                definition screenshot I really like the colour but, you can
+                                change it
+                            </p>
+                            <div class="projects__listWrap">
+                                <h3 class="projects__tittle">
+                                    Expert reels & influencer videos
+                                </h3>
+                                <p class="project__description">Barcelona, Spain</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <button class="button button__black">
+                    <a href="" class="button__link"> explore pricing</a>
+                </button>
+            </div>
+        </section>
+
+        <!-- Stories Section  -->
+        <section class="stories">
+            <div class="container">
+                <h4 class="section__titleLable">our stories</h4>
+                <section class="stories__contentLeft">
+                    <h2 class="section__title">What our customers say</h2>
+                    <img class="stories__img" src="./vendor/images/peopple_01.jpg" alt="Peopple Image" />
+                </section>
+
+                <section class="stories__contentRight">
+                    <div class="stories__wrap">
+                        <h3 class="section__subtitle">
+                            stories that inspire actions & connections
+                        </h3>
+
+                        <p class="section__text">
+                            Depois plus de 10 ans, ROUSSEAU N°5 est une agencie immobiliere
+                            genevoise reputee pour la qualite de son cataloge o'bjects, son
+                            expertise en fixation de prix de vente ed pour la presicion de
+                            son accompagnement sur mesure
+                        </p>
+
+                        <button class="button button__white">
+                            <a href="" class="button__link">learn more</a>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Why Choose us Section  -->
+        <section class="whyChoose">
+            <div class="container">
+                <h4 class="section__titleLable">why choose us</h4>
+                <h3 class="section__title">We have all the mandatory aspects</h3>
+                <ul class="whyChoose__list">
+                    <li class="card">
+                        <p class="section__text">
+                            Depois plus de 10 ans, ROUSSEAU N°5 est une agencie immobiliere
+                            genevoise reputee pour la qualite de son cataloge o'bjects, son
+                            expertise en fixation de prix de vente ed pour la presicion de
+                            son accompagnement sur mesure
+                        </p>
+
+                        <button class="button button__white">
+                            <a href="" class="button__link">learn more</a>
+                        </button>
+                    </li>
+
+                    <li class="card">
+                        <img class="whyChoose__img" src="./vendor/icons/chat_icon.svg" alt="Family Icon" />
+
+                        <h5 class="card__title">communication</h5>
+                        <p class="section__text">
+                            I want to take it to the next level. can you use a high
+                            definition screenshot I really like the colour but, you can
+                            change it
+                        </p>
+
+                        <a class="card__title" href="#">check here...</a>
+                    </li>
+
+                    <li class="card card-dark">
+                        <img class="whyChoose__img" src="./vendor/icons/famly-icon.svg" alt="Family Icon" />
+                        <h5 class="card__title">families</h5>
+                        <p class="section__text">
+                            I want to take it to the next level. can you use a high
+                            definition screenshot I really like the colour but, you can
+                            change it
+                        </p>
+                        <a class="card__title" href="#">check here...</a>
+                    </li>
+
+                    <li class="card">
+                        <img class="whyChoose__img" src="./vendor/icons/certified-_con.svg" alt="Family Icon" />
+
+                        <h5 class="card__title">quality first</h5>
+
+                        <p class="section__text">
+                            I want to take it to the next level. can you use a high
+                            definition screenshot I really like the colour but, you can
+                            change it
+                        </p>
+                        <a class="card__title" href="#">check here...</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Testimonials   -->
+        <section class="testimonials">
+            <div class="container">
+                <h3 class="section__titleLable">testimonials</h3>
+
+                <h2 class="section__title">Why or client love us</h2>
+
+                <section class="testimonials__cards">
+                    <div class="card">
+                        <img class="card__logo" src="./vendor/icons/Spotify.svg" alt="Spotify Logo" />
+
+                        <h5 class="card__title">comunication</h5>
+
+                        <p class="section__text">
+                            I want to take it to the next level. can you use a high
+                            definition screenshot I really like the colour but, you can
+                            change it
+                        </p>
+
+                        <p><b>Dive Phonix</b></p>
+                        <p class="section__text">Lead Engineer Of Spotify</p>
+                    </div>
+                </section>
+
+                <img class="testimonials__banner" src="./vendor/images/peopple_02.jpg" alt="Happy Peopple">
+
+                <ul class="testiomonial__list">
+
+                    <li class="testimonials__item">
+                        <img class="testimonial__brand" src="./vendor/icons/Spotify.svg" alt="Spotify Logo">
+                    </li>
+                    <li class="testimonials__item">
+                        <img class="testimonial__brand" src="./vendor/icons/Google.svg" alt="Google Icon">
+                    </li>
+                    <li class="testimonials__item">
+                        <img class="testimonial__brand" src="./vendor/icons/Uber.svg" alt="Uber Icon">
+                    </li>
+                    <li class="testimonials__item">
+                        <img class="testimonial__brand" src="./vendor/icons/Microsoft.svg" alt="Microsoft Logo">
+                    </li>
+                    <li class="testimonials__item">
+                        <img class="testimonial__brand" src="./vendor/icons/Shopify.svg" alt="Shopify Logo">
+                    </li>
+                    <li class="testimonials__item">
+                        <img class="testimonial__brand" src="./vendor/icons/Evernote.svg" alt="Evernote Logo">
+                    </li>
+                    <li class="testimonials__item">
+                        <img class="testimonial__brand" src="./vendor/icons/Adobe.svg" alt="Adobe Logo">
+                    </li>
+                    <li class="testimonials__item">
+                        <img class="testimonial__brand" src="./vendor/icons/Paipal.svg" alt="Paypal Logo">
+                    </li>
+                    <li class="testimonials__item">
+                        <img class="testimonial__brand" src="./vendor/icons/Amazon.svg" alt="amazon Logo">
+                    </li>
+                    <li class="testimonials__item">
+                        <img class="testimonial__brand" src="./vendor/icons/Asana.svg" alt="Asana Logo">
+                    </li>
+                    <li class="testimonials__item">
+                        <img class="testimonial__brand" src="" alt="">
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- Blog   -->
+        <section class="blog">
+            <div class="container">
+                <h3 class="section__titleLable">our bloh</h3>
+                <h2 class="section__title">Latest News & Career</h2>
+                <ul class="blog__list">
+                    <li class="blog__item">
+                        <a href="" class="blog__link">
+                            <img class="blog__image" src="./vendor/images/house_01.jpg" alt="House Image">
+                            <div class="blog__wrap">
+                                <section class="blog__content">
+                                    <div class="blog__info">
+                                        <p class="blog__infoText">6 September, 2022</p>
+                                        <p class="blog__infoText">Al Rasi Siam</p>
+                                    </div>
+
+                                    <h4 class="blog__title">
+                                        Archito will ready in less than a year to make your
+                                        property
+                                    </h4>
+                                    <p class="section__text">
+                                        When applied to building block a website or similar work product, a Visual gGide
+                                        can...
+                                    </p>
+                                </section>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="blog__item">
+                        <a href="" class="blog__link">
+                            <img class="blog__image" src="./vendor/images/house_04.jpg" alt="House Image">
+
+                            <div class="blog__wrap">
+                                <section class="blog__content">
+                                    <div class="blog__info">
+                                        <p class="blog__infoText">6 September, 2022</p>
+                                        <p class="blog__infoText">Al Rasi Siam</p>
+                                    </div>
+
+                                    <h4 class="blog__title">
+                                        Archito will ready in less than a year to make your
+                                        property
+                                    </h4>
+                                    <p class="section__text">
+                                        When applied to building block a website or similar work product, a Visual gGide
+                                        can...
+                                    </p>
+                                </section>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="blog__item">
+                        <a href="" class="blog__link">
+                            <img class="blog__image" src="./vendor/images/house_03.jpg" alt="House Image">
+
+                            <div class="blog__wrap">
+                                <section class="blog__content">
+                                    <div class="blog__info">
+                                        <p class="blog__infoText">6 September, 2022</p>
+                                        <p class="blog__infoText">Al Rasi Siam</p>
+                                    </div>
+
+                                    <h4 class="blog__title">
+                                        Archito will ready in less than a year to make your
+                                        property
+                                    </h4>
+                                    <p class="section__text">
+                                        When applied to building block a website or similar work product, a Visual gGide
+                                        can...
+                                    </p>
+                                </section>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="blog__item">
+                        <a href="" class="blog__link">
+                            <img class="blog__image" src="./vendor/images/house_02.jpg" alt="House Image">
+
+                            <div class="blog__wrap">
+                                <section class="blog__content">
+                                    <div class="blog__info">
+                                        <p class="blog__infoText">6 September, 2022</p>
+                                        <p class="blog__infoText">Al Rasi Siam</p>
+                                    </div>
+
+                                    <h4 class="blog__title">
+                                        Archito will ready in less than a year to make your
+                                        property
+                                    </h4>
+                                    <p class="section__text">
+                                        When applied to building block a website or similar work product, a Visual gGide
+                                        can...
+                                    </p>
+                                </section>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <button class="button button__white">
+                    <a href="" class="button__link">learn more</a>
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Jumbotron   -->
+        <section class="jumbotron">
+            <div class="container">
+                <h2 class="section__title section__title-white">Start your journey with us now</h2>
+                <button class="button button__whiteBorderless">
+                    <a href="#" class="button__link">explore all</a>
+                </button>
+            </div>
+        </section>
+
+        <!-- FAQ   -->
+        <section class="faq">
+            <div class="container">
+                <section class="faq__questions">
+                    <h2 class="section__title section__title-upercase">got Questions? we got answers</h2>
+                    <ul class="faq__questionsList">
+                        <li class="faq__item">
+                            <p class="faq__question">How do I sign up for a proyect?
+                                <span class="material-symbols-outlined faq__btn">
+                                    add_circle
+                                </span>
+                            </p>
+
+                            <p class="faq__answer section__text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita voluptas qui totam
+                                delectus doloribus facere, voluptates consequuntur quis ullam quod cupiditate illum
+                                aperiam eius sit dolores animi ratione numquam consequatur.
+                            </p>
+                        </li>
+
+                        <li class="faq__item">
+                            <p class="faq__question">What thing I should prepare before starting?
+                                <span class="material-symbols-outlined faq__btn">
+                                    add_circle
+                                </span>
+                            </p>
+
+                            <p class="faq__answer section__text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita voluptas qui totam
+                                delectus doloribus facere, voluptates consequuntur quis ullam quod cupiditate illum
+                                aperiam eius sit dolores animi ratione numquam consequatur.
+                            </p>
+                        </li>
+
+                        <li class="faq__item">
+                            <p class="faq__question">What thing I should prepare before starting?
+                                <span class="material-symbols-outlined faq__btn">
+                                    add_circle
+                                </span>
+                            </p>
+
+                            <p class="faq__answer section__text ">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita voluptas qui totam
+                                delectus doloribus facere, voluptates consequuntur quis ullam quod cupiditate illum
+                                aperiam eius sit dolores animi ratione numquam consequatur.
+                            </p>
+                        </li>
+
+                        <li class="faq__item">
+                            <p class="faq__question">Does my company needhelp for marketing advices?
+                                <span class="material-symbols-outlined faq__btn">
+                                    add_circle
+                                </span>
+                            </p>
+
+                            <p class="faq__answer section__text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita voluptas qui totam
+                                delectus doloribus facere, voluptates consequuntur quis ullam quod cupiditate illum
+                                aperiam eius sit dolores animi ratione numquam consequatur.
+                            </p>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <section class="faq__newsletter">
+                    <h3 class="faq__subtitle">how we can help you?</h3>
+
+                    <p class="section__text section__text-white">
+                        Follow our newsletter, we will regulary update our latest projects and availability
+                    </p>
+
+                    <form action="" class="faq__form">
+                        <input type="text" class="faq__input" placeholder="Enter your email">
+                        <button class="button button__white">
+                            <a href="#" class="button__link">let's talk</a>
+                        </button>
+                    </form>
+
+                    <a href="#" class="faq__link">More FAQ
+                        <span class="material-symbols-outlined">
+                            arrow_forward
+                        </span>
+                    </a>
+                </section>
+            </div>
+        </section>
     </main>
-    <footer>
 
+    <footer class="footer">
+        <div class="container">
+            <section class="footer__section">
+                <p class="footer__subtitle">phone</p>
+                <address class="footer__contact"> +7 499 322 16 67</address>
+                <p class="footer__subtitle">address</p>
+                <address class="footer__contact">734 brodway, floor 5 new yor, NY 10003</address>
+            </section>
+
+            <section class="footer__section">
+                <p class="footer__subtitle">email</p>
+                <address class="footer__contact-email">nhausmedia@mail.com</address>
+
+                <p class="footer__subtitle">folow us</p>
+
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__social">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__social">
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+
+            <section class="footer__section">
+                <h2 class="footer__title">nHaus</h2>
+                <p class="section__text section__text-white">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi fugiat veniam praesentium!
+                    Quibusdam sed inventore ducimus earum, fuga odio. Nisi ipsam provident sint aliquid hic
+                    exercitationem voluptatem ratione recusandae voluptatibus!
+                </p>
+            </section> 
+
+            <p class="footer__copyright">&copy All rights reserved 2022 - designed by digital, powered by webflow</p>
+        </div>
     </footer>
-</body>
 
+    <script src="./vendor/js/scripts.js"></script>
+</body>
 
 </html>
