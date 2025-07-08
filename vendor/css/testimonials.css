@@ -1,0 +1,49 @@
+.testimonials {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+
+}
+
+.testimonials .container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.testimonials .testimonials__cards .card {
+    position: relative;
+    z-index: 20;
+    max-width: 50%;
+
+}
+
+.testimonials .testimonials__banner {
+    border-radius: 25px;
+    display: block;
+
+    position: absolute;
+
+    transform: translateX(-15%);
+    top: 0;
+    left: 50%;
+    width: 70%;
+    z-index: 0;
+}
+
+.testimonials .testiomonial__list {
+    margin-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10%;
+}
+
+.testimonials .testimonials__item {
+    width: 10%;
+    margin-bottom: 100px;
+}
+
+.testimonials .testimonial__brand {
+    width: 100%;
+}

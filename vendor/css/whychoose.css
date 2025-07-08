@@ -1,0 +1,23 @@
+.whyChoose {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.whyChoose .container {
+    margin: 0 auto;
+}
+
+.whyChoose .whyChoose__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.whyChoose .whyChoose__img {
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.whyChoose .card {
+    width: 300px;
+}

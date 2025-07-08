@@ -1,0 +1,35 @@
+.main {
+    width: 100%;
+    background-color: var(--black-Backgro);
+    padding: 100px 0 250px 0;
+}
+
+.main .container {
+    display: flex;
+    margin: 0 auto;
+}
+
+.main .main_contentLeft {
+    width: 50%;
+}
+
+.main .main_contentRight {
+    width: 50%;
+}
+
+.main .main_title {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.main .main_divRight {
+    margin-left: auto;
+    width: 340px;
+}
+
+.main .main_paragraph {
+    color: #ffffff;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,97 @@
+.projects {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.projects .container {
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.projects .projects__list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.projects .projects__listItem {
+  background-color: #000000;
+  border-radius: 20px;
+  cursor: pointer;
+
+  position: relative;
+
+  overflow: hidden;
+  width: 18%;
+}
+
+.projects .projects__listItem>.material-symbols-outlined {
+  opacity: 0;
+  font-size: 50px;
+  font-variation-settings: "FILL" 1;
+  color: #ffffff;
+
+  position: absolute;
+  right: 30px;
+  top: -7px;
+}
+
+.projects .projects__img {
+  transition: opacity ease 0.3s;
+  height: 100%;
+  width: 100%;
+}
+
+.projects .projects__listItem>.project__description {
+  z-index: 10;
+  transition: opacity ease 0.3s;
+  opacity: 0;
+  color: #ffffff;
+  padding: 0 20px;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+}
+
+.projects .projects__listWrap {
+  color: #ffffff;
+  position: absolute;
+  top: 100%;
+
+  padding: 0 20px;
+  width: 100%;
+  transform: translateY(-105px);
+}
+
+.projects .projects__tittle {
+  text-transform: capitalize;
+}
+
+.projects .projects__tittle::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.projects .projects__listItem:hover .projects__img {
+  position: relative;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.projects .projects__listItem:hover .project__description {
+  opacity: 100%;
+}
+
+.projects .projects__listItem:hover>.material-symbols-outlined {
+  opacity: 100%;
+}
+
+.projects .container .button {
+  display: block;
+  margin: 50px auto;
+}

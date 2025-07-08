@@ -1,0 +1,13 @@
+.banner {
+    width: 100%;
+}
+
+.banner .container {
+    margin: 0 auto;
+}
+
+.banner .banner_img {
+    border-radius: 25px;
+    width: 100%;
+    transform: translateY(-200px);
+}
