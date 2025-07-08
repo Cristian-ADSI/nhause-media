@@ -267,7 +267,7 @@ a {
 
 
 
-/* ---------------Navbar---------------- */
+/* ---------------main---------------- */
 
 .main {
   width: 100%;
@@ -368,7 +368,7 @@ a {
 
 .projects .projects__listItem {
   background-color: #000000;
-  border-radius: 30px;
+  border-radius: 20px;
   cursor: pointer;
 
   position: relative;
@@ -528,7 +528,7 @@ a {
 }
 
 .testimonials .testimonials__banner {
-  border-radius: 30px;
+  border-radius: 25px;
   display: block;
 
   position: absolute;
@@ -640,7 +640,7 @@ a {
 }
 
 .jumbotron .container {
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 50px 0;
   background-color: var(--mainBlue-text);
   margin: 0 auto;
