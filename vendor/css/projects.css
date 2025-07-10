@@ -11,6 +11,7 @@
 .projects .projects__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   width: 100%;
 }
@@ -94,4 +95,32 @@
 .projects .container .button {
   display: block;
   margin: 50px auto;
+}
+
+@media only screen and (max-width: 919.99px) {
+
+  .projects .projects__list {
+    justify-content: space-around;
+  }
+
+  .projects .projects__listItem {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 639.99px) {
+  .projects .projects__listItem {
+    width: 45%;
+
+  }
+}
+
+
+
+@media only screen and (max-width: 479.99px) {
+  .projects .projects__listItem {
+    width: 100%; 
+
+  }
 }
