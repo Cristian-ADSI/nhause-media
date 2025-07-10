@@ -9,7 +9,7 @@
 
 .whyChoose .whyChoose__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -20,4 +20,17 @@
 
 .whyChoose .card {
     width: 300px;
+}
+
+@media only screen and (max-width: 1199.99px) {
+    .whyChoose .card {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 479.99px) {
+
+    .whyChoose .card {
+        width: 100%;
+    }
 }

@@ -246,8 +246,14 @@ a {
 }
 
 @media only screen and (max-width: 479.99px) {
+
+
   .container {
-    padding: 0 20px; 
+    padding: 0 20px;
+  }
+
+  .section__title {
+    font-size: 28px;
   }
 
   .button .button__link {
