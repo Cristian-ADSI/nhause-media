@@ -34,16 +34,59 @@
     margin-top: 300px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     gap: 10%;
 }
 
 .testimonials .testimonials__item {
-    width: 10%;
+    width: 130px;
     margin-bottom: 100px;
 }
 
 .testimonials .testimonial__brand {
     width: 100%;
+}
+
+@media only screen and (max-width: 1023.99px) {
+    .testimonials .testiomonial__list {
+        margin-top: 100px;
+    }
+
+    .testimonials .testimonials__cards .card {
+        margin: 0 auto 50px auto;
+        max-width: 80%;
+
+    }
+
+    .testimonials .testimonials__banner {
+
+        position: relative;
+
+        margin: 0 auto;
+        transform: translateX(0);
+        top: unset;
+        left: unset;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 767.99px) {
+    .testimonials .testimonials__cards .card {
+        max-width: 100%;
+    }
+
+    .testimonials .testimonials__banner {
+        width: 100%; 
+    }
+
+    .testimonials .testimonials__item {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 479.99px) {
+    .testimonials .testimonials__item {
+        width: 100px;
+    }
 }
